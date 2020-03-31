@@ -1,0 +1,34 @@
+Version: 118201, IsPerforceBuild: false, BuildConfiguration: Shipping, NetMode: ListenServer
+
+Assertion failed: GetBuildGun()->GetInventory() [File:D:\ws\SB-200303103109-c8c\UE4\Games\FactoryGame\Source\FactoryGame\Private\Equipment\FGBuildGunBuild.cpp] [Line: 963] No inventory on buildgun on server build execution. Hologram: FGWallHologram_53:Recipe_Wall_8x4_01_C. NetID: {player ID: 4, Server: 0, Client: 119}, Buildgun Owner: Char_Player_C_1, pawn time: 1234.157593, controllerTime: 1223.984985, moveState: 1, hp: 83.000000 , handEqupment: Null | \kcr:NoInventory\
+
+FactoryGame_Win64_Shipping!FWindowsErrorOutputDevice::Serialize() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\core\private\windows\windowserroroutputdevice.cpp:79]
+FactoryGame_Win64_Shipping!FOutputDevice::LogfImpl() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\core\private\misc\outputdevice.cpp:71]
+FactoryGame_Win64_Shipping!AssertFailedImplV() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\core\private\misc\assertionmacros.cpp:101]
+FactoryGame_Win64_Shipping!FDebug::CheckVerifyFailedImpl() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\core\private\misc\assertionmacros.cpp:439]
+FactoryGame_Win64_Shipping!<lambda_67f012cfa2a356794f6785858257b210>::operator()() [d:\ws\sb-200303103109-c8c\ue4\games\factorygame\source\factorygame\private\equipment\fgbuildgunbuild.cpp:956]
+FactoryGame_Win64_Shipping!UFGBuildGunStateBuild::Server_ConstructHologram_Implementation() [d:\ws\sb-200303103109-c8c\ue4\games\factorygame\source\factorygame\private\equipment\fgbuildgunbuild.cpp:956]
+FactoryGame_Win64_Shipping!UFGBuildGunStateBuild::execServer_ConstructHologram() [d:\ws\sb-200303103109-c8c\ue4\games\factorygame\source\factorygame\public\equipment\fgbuildgunbuild.h:76]
+FactoryGame_Win64_Shipping!UFunction::Invoke() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\coreuobject\private\uobject\class.cpp:4644]
+FactoryGame_Win64_Shipping!UObject::ProcessEvent() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\coreuobject\private\uobject\scriptcore.cpp:1464]
+FactoryGame_Win64_Shipping!FObjectReplicator::ReceivedRPC() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\engine\private\datareplication.cpp:1010]
+FactoryGame_Win64_Shipping!FObjectReplicator::ReceivedBunch() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\engine\private\datareplication.cpp:843]
+FactoryGame_Win64_Shipping!UActorChannel::ProcessBunch() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\engine\private\datachannel.cpp:2551]
+FactoryGame_Win64_Shipping!UActorChannel::ReceivedBunch() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\engine\private\datachannel.cpp:2408]
+FactoryGame_Win64_Shipping!UChannel::ReceivedNextBunch() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\engine\private\datachannel.cpp:775]
+FactoryGame_Win64_Shipping!UChannel::ReceivedRawBunch() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\engine\private\datachannel.cpp:456]
+FactoryGame_Win64_Shipping!UNetConnection::ReceivedPacket() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\engine\private\netconnection.cpp:2011]
+FactoryGame_Win64_Shipping!UNetConnection::ReceivedRawPacket() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\engine\private\netconnection.cpp:1111]
+FactoryGame_Win64_Shipping!UIpNetDriver::TickDispatch() [d:\ws\sb-200303103109-c8c\ue4\engine\plugins\online\onlinesubsystemutils\source\onlinesubsystemutils\private\ipnetdriver.cpp:564]
+FactoryGame_Win64_Shipping!TBaseUObjectMethodDelegateInstance<0,AFGCharacterPlayer,void __cdecl(float)>::ExecuteIfSafe() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\core\public\delegates\delegateinstancesimpl.h:679]
+FactoryGame_Win64_Shipping!TBaseMulticastDelegate<void,float>::Broadcast() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\core\public\delegates\delegatesignatureimpl.inl:977]
+FactoryGame_Win64_Shipping!UWorld::Tick() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\engine\private\leveltick.cpp:1448]
+FactoryGame_Win64_Shipping!UGameEngine::Tick() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\engine\private\gameengine.cpp:1366]
+FactoryGame_Win64_Shipping!UFGGameEngine::Tick() [d:\ws\sb-200303103109-c8c\ue4\games\factorygame\source\factorygame\private\fggameengine.cpp:9]
+FactoryGame_Win64_Shipping!FEngineLoop::Tick() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\launch\private\launchengineloop.cpp:3976]
+FactoryGame_Win64_Shipping!GuardedMain() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\launch\private\launch.cpp:168]
+FactoryGame_Win64_Shipping!GuardedMainWrapper() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\launch\private\windows\launchwindows.cpp:145]
+FactoryGame_Win64_Shipping!WinMain() [d:\ws\sb-200303103109-c8c\ue4\engine\source\runtime\launch\private\windows\launchwindows.cpp:275]
+FactoryGame_Win64_Shipping!__scrt_common_main_seh() [d:\agent\_work\2\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+kernel32
+ntdll
